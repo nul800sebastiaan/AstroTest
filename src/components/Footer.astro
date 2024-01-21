@@ -1,0 +1,19 @@
+---
+import Social from './Social.astro';
+
+const platform = "github";
+const username = "nul800sebastiaan";
+---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+
+<footer>
+  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+  <Social platform="cultiv" tld="social" username="@sebastiaan" />
+  <Social platform="github" tld="com" username="nul800sebastiaan" />
+</footer>
